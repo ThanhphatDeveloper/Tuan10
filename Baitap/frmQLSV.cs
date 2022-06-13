@@ -50,7 +50,7 @@ namespace Baitap
             daQLSinhVien.InsertCommand = insertCommand;
 
             SqlCommand deleteCommand = new SqlCommand ("UPDATE SINHVIEN SET TRANGTHAI = 0 WHERE ID = @ID");
-            insertCommand.Parameters.Add("@ID", SqlDbType.Int, 10, "ID");
+            deleteCommand.Parameters.Add("@ID", SqlDbType.Int, 10, "ID");
             daQLSinhVien.DeleteCommand = deleteCommand;
 
             SqlCommandBuilder scb = new SqlCommandBuilder(daQLSinhVien); // cho phép cập nhật dữ liệu 
