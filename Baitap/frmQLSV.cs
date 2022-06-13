@@ -81,7 +81,10 @@ namespace Baitap
         private void radHoTen_CheckedChanged(object sender, EventArgs e)
         {
             if (!radHoTen.Checked)
+            {
                 txtHoTen.Text = string.Empty;
+
+            }
         }
 
         private void btnTimMSSV_Click(object sender, EventArgs e)
